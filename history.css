@@ -1,0 +1,125 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #121212;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfd9hjIqxuCMBdh1vMGInQ1DY1aTiFt6g5DA&s') no-repeat center/cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* Header */
+header {
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header ul li {
+    margin: 0;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+    padding: 10px 15px;
+}
+
+header ul li a:hover {
+    color: #ffa500;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Background with opacity */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+main h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    color: #fff;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+main p {
+    font-size: 1.4em;
+    line-height: 1.6;
+    color: #f0f0f0;
+    text-align: justify;
+}
+
+/* Section Titles */
+section h2 {
+    font-size: 2.5em;
+    margin-top: 30px;
+    color: #ffa500;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Milestones List */
+
+
+.hero .cta {
+    background-color: #ffa500;
+    color: #121212;
+    padding: 20px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    box-shadow: 0px 4px 15px rgba(255, 165, 0, 0.7);
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.hero .cta:hover {
+    background-color: #ff7f00;
+    color: white;
+    box-shadow: 0px 6px 20px rgba(255, 127, 0, 0.8);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    main h1 {
+        font-size: 2.5em;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+
+    .isha-image, .isha-image-small {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    ul li {
+        font-size: 1.1em;
+        padding: 8px;
+    }
+}

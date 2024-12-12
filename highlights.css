@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #121212;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfd9hjIqxuCMBdh1vMGInQ1DY1aTiFt6g5DA&s') no-repeat center/cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Header */
+header {
+    padding: 15px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header ul li {
+    margin: 0;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+    padding: 10px 15px;
+}
+
+header ul li a:hover {
+    color: #ffa500;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+main h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 3em;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    color: #fff;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Highlight Section */
+.highlight {
+    display: flex;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.highlight-image {
+    width: 40%;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.highlight-text {
+    width: 60%;
+    color: #f0f0f0;
+}
+
+.highlight-text h2 {
+    font-size: 2.5em;
+    color: #ffa500;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.highlight-text p {
+    font-size: 1.3em;
+    line-height: 1.6;
+    color: #f0f0f0;
+    text-align: justify;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    main h1 {
+        font-size: 2.5em;
+    }
+
+    .highlight {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .highlight-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .highlight-text {
+        width: 100%;
+    }
+
+    .highlight-text h2 {
+        font-size: 2em;
+    }
+
+    .highlight-text p {
+        font-size: 1.2em;
+    }
+}
